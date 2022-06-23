@@ -140,7 +140,7 @@ async function run(): Promise<void> {
     if (branchCheck !== null) {
       debug('success', 'Branch name contains a reference to a ticket, updating title');
 
-      const id = extractId(branch);
+      const id = extractId(branchCheck);
 
       if (id === null) {
         setFailed('Could not extract a ticket ID reference from the branch');
