@@ -154,7 +154,7 @@ async function run(): Promise<void> {
         pull_number: number,
         title: titleFormat
           .replace('%prefix%', ticketPrefix)
-          .replace('%id%', branchCheck)
+          .replace('%id%', id)
           .replace('%title%', title)
       });
 
